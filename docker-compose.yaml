@@ -1,0 +1,9 @@
+version: '3'
+services:
+  spark:
+    image: jupyter/pyspark-notebook:latest
+    container_name: spark
+    ports:
+      - "8888:8888"java
+    volumes:
+      - ./work:/home/jovyan/work
